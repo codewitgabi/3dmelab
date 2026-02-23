@@ -16,7 +16,7 @@ export function Cta() {
           </p>
           <div className="animate-on-scroll stagger-3">
             <Button size="lg" className="mt-6 gap-2" asChild>
-              <Link href="#get-started">
+              <Link href="/auth/register">
                 Get started free
                 <ArrowRight className="size-4" />
               </Link>

@@ -28,7 +28,7 @@ export function TextTo3D() {
               </p>
               <div className="animate-on-scroll stagger-4">
                 <Button className="mt-6" asChild>
-                  <Link href="#get-started">Try text to 3D</Link>
+                  <Link href="/auth/register">Try text to 3D</Link>
                 </Button>
               </div>
             </div>

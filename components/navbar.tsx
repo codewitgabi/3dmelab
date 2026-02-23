@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#text-to-3d", label: "Text to 3D" },
-  { href: "#image-to-3d", label: "Image to 3D" },
-  { href: "#formats", label: "Formats" },
+  { href: "/#text-to-3d", label: "Text to 3D" },
+  { href: "/#image-to-3d", label: "Image to 3D" },
+  { href: "/#formats", label: "Formats" },
 ];
 
 export function Navbar() {
@@ -66,7 +66,7 @@ export function Navbar() {
             <Link href="/auth/login">Log in</Link>
           </Button>
           <Button size="sm" asChild>
-            <Link href="#get-started">Generate 3D</Link>
+            <Link href="/auth/register">Generate 3D</Link>
           </Button>
         </div>
 
@@ -106,7 +106,7 @@ export function Navbar() {
               </Link>
             </Button>
             <Button size="sm" asChild className="w-full">
-              <Link href="#get-started" onClick={() => setMobileOpen(false)}>
+              <Link href="/auth/register" onClick={() => setMobileOpen(false)}>
                 Generate 3D
               </Link>
             </Button>

@@ -3,19 +3,19 @@ import { AnimateInView } from "@/app/_components/animate-in-view";
 
 const footerLinks = {
   product: [
-    { label: "Text to 3D", href: "#text-to-3d" },
-    { label: "Image to 3D", href: "#image-to-3d" },
-    { label: "Formats", href: "#formats" },
-    { label: "Get started", href: "#get-started" },
+    { label: "Text to 3D", href: "/#text-to-3d" },
+    { label: "Image to 3D", href: "/#image-to-3d" },
+    { label: "Formats", href: "/#formats" },
+    { label: "Get started", href: "/auth/register" },
   ],
   company: [
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
-    { label: "Blog", href: "#blog" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+    { label: "Blog", href: "/blog" },
   ],
   legal: [
-    { label: "Privacy", href: "#privacy" },
-    { label: "Terms", href: "#terms" },
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
   ],
 };
 
@@ -30,7 +30,7 @@ export function Footer() {
             <div className="animate-on-scroll stagger-1 sm:col-span-2 lg:col-span-1">
               <Link
                 href="/"
-                className="font-semibold tracking-tight text-foreground no-underline"
+                className="font-semibold tracking-tight text-foreground no-underline hover:opacity-90"
               >
                 3Dme<span className="text-primary">lab</span>
               </Link>

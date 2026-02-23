@@ -55,13 +55,13 @@ export function Hero() {
 
         <div className="animate-fade-in-up mt-10 flex flex-col items-center justify-center gap-3 opacity-0 stagger-4 sm:flex-row">
           <Button size="lg" className="gap-2 min-w-[160px]" asChild>
-            <Link href="#get-started">
+            <Link href="/auth/register">
               Create 3D now
               <ArrowRight className="size-4" />
             </Link>
           </Button>
           <Button size="lg" variant="outline" className="min-w-[160px]" asChild>
-            <Link href="#formats">Output formats</Link>
+            <Link href="/#formats">Output formats</Link>
           </Button>
         </div>
       </div>
