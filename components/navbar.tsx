@@ -63,7 +63,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="ghost" size="sm" asChild>
-            <Link href="#login">Log in</Link>
+            <Link href="/auth/login">Log in</Link>
           </Button>
           <Button size="sm" asChild>
             <Link href="#get-started">Generate 3D</Link>
@@ -101,7 +101,7 @@ export function Navbar() {
           ))}
           <div className="mt-4 flex flex-col gap-2 border-t border-border/50 pt-4">
             <Button variant="outline" size="sm" asChild className="w-full">
-              <Link href="#login" onClick={() => setMobileOpen(false)}>
+              <Link href="/auth/login" onClick={() => setMobileOpen(false)}>
                 Log in
               </Link>
             </Button>
