@@ -7,6 +7,7 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { PasswordInput } from "@/app/auth/_components/password-input";
+import { SocialSigninButtons } from "@/app/auth/_components/social-signin-buttons";
 import {
   Form,
   FormControl,
@@ -29,7 +30,8 @@ interface LoginFormProps {
 
 export function LoginForm({ action }: LoginFormProps) {
   const form = useForm<LoginValues>({
-    resolver: zodResolver(loginSchema),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- zodResolver types target Zod 3; Zod 4 is compatible at runtime
+    resolver: zodResolver(loginSchema as any),
     defaultValues: { email: "", password: "" },
   });
 
@@ -81,6 +83,17 @@ export function LoginForm({ action }: LoginFormProps) {
         <Button type="submit" className="w-full">
           Sign in
         </Button>
+        <div className="relative my-4">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t border-border" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="bg-background px-2 text-muted-foreground">
+              Or continue with
+            </span>
+          </div>
+        </div>
+        <SocialSigninButtons />
         <p className="text-center text-sm text-muted-foreground">
           Don&apos;t have an account?{" "}
           <Link
